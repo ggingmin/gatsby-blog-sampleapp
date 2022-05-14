@@ -1,18 +1,26 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Gatsby Blog Sample App`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `ggingmin`,
+      summary: `Live And Let Live!`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Test for deployment`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
     },
   },
   plugins: [
     `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Noto+Sans+KR\:100,300,400,500,700,900`
+        ],
+        display: 'swap'
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
