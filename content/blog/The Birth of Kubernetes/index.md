@@ -4,9 +4,9 @@ date: "2022-05-15T22:12:03.284Z"
 description: "컨테이너 기반 어플리케이션, 쿠버네티스의 탄생 그리고 목적에 대하여 간략하게 다뤄보는 시간을 가져보겠습니다. 비슷한 개념이 혼재되어 학습에 난해함을 겪지 않도록 명료하게 정리하고 넘어가도록 하겠습니다"
 ---
 
->- **Kubernetes :** [https://kubernetes.io/](https://kubernetes.io/ko/)
->- **The Twelve-Factor app** : [https://12factor.net/](https://12factor.net/)
->- **Red Hat 쿠버네티스(Kubernetes)란? 개‭념, 성‭능, 사‭용 방‭법 및 차‭이‭점 :**    [https://www.redhat.com/ko/topics/containers/what-is-kubernetes](https://www.redhat.com/ko/topics/containers/what-is-kubernetes)
+>- **[Kubernetes](https://kubernetes.io/ko/)**
+>- **[The Twelve-Factor app](https://12factor.net/)**
+>- **[Red Hat 쿠버네티스(Kubernetes)란? 개념, 성능, 사용 방법 및 차이점](https://www.redhat.com/ko/topics/containers/what-is-kubernetes)**
 >- **Kubernetes for Developers, 1st ed. by William Denniss (Manning, 2021)**
 >- **Microservices in Action, 1st ed. by Morgan Bruce, Paulo A. Pereira (Manning, 2018)**
 >- **Abhishek Verma, Luis Pedrosa, Madhukar R. Korupolu, David Oppenheimer, Eric Tune John Wilkes, "Large-scale cluster management at Google with Borg": Proceedings of the European Conference on Computer Systems (EuroSys), 2015**
@@ -69,7 +69,3 @@ Stateful은 방식은 Stateless와는 다르게 클라이언트의 정보를 서
 ### 3.2 신속한 배포 절차
 
 배포를 하기 위해서는 굉장히 많은 시간이 소요됩니다. 개발자가 배포를 위해서 수행해야 하는 스크립트도 업무에서 큰 영역을 차지하였죠. 배포 프로세스 자체가 무거워지다보니 빠르게 요구사항을 반영하는 데에도 걸림돌이 되었습니다. 쿠버네티스에서는 배포 대상의 되는 컨테이너를 효율적으로 다루는 여러 기능을 제공합니다. 필요한 개발계 서버가 있으면 빠르게 증설이 가능하며, 설정에 따라 자동으로 실행 컨테이너수나 CPU 자원을 할당할 수 있습니다. 더불어 각 노드를 헬스체킹하여 에러가 발생한 컨테이너를 정상 컨테이너로 대체하는 self-healing 기능 및 신규버전을 운영 환경에 롤아웃 하였을때 장애가 발생하였을때 다시 이전 버전으로 롤백하는 기능도 제공하고 있습니다. 지금도 많은 곳에서 배포 모니터링 및 롤백은 수작업으로 수행하는 경우가 적지 않지만 쿠버네티스에서는 이러한 작업을 모두 자동화하여 관리합니다. 마지막으로 카나리 업데이트를 지원하는데, 이는 이전버전과 신규버전을 운영환경에서 동시에 테스트 해볼 수 있는 환경을 구성하는 것을 의미합니다. 동일한 운영환경에서 변경된 소스 부분을 병렬적으로 검증할 수 있기 때문에 대고객 서비스에서 발생할 수 있는 잠재적 장애 요소를 사전에 예방할 수 있습니다.
-
-## 4 Docker와 Kubenetes의 관계성
-
-(연재 및 작성 진행 중입니다. 감사합니다 🙂)
